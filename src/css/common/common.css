@@ -1,0 +1,10 @@
+@import "/src/css/common/classes.scss";
+@import "/src/css/common/reset.scss";
+
+html,body,.wrapAll{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+}

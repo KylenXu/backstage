@@ -1,0 +1,9 @@
+.login-view{width:100%;height:100%;margin:0;font-size:14px;background:-webkit-gradient(linear,0 0,0 70%,from(#132f43),to(#8396a3));background-repeat:no-repeat;overflow:hidden}
+.login-view .login-window{position:relative;width:590px;height:590px;margin:10% auto 0;background:url("/images/total_login_bg.png")}
+.login-view .login-window form{position:absolute;top:197px;left:84px;width:350px;height:300px;padding:38px 35px 0 35px}
+.login-view .login-window form .loginTil{height:30px;line-height:30px;text-align:center;font-size:24px;margin-bottom:5px;color:#445b6e}
+.login-view .login-window form .login-txtBtn{margin:15px 0 0 0;width:350px;line-height:20px;padding:9px 0 9px 16px;border:1px solid #ddd;color:#727272;font-size:14px;outline:0;border-radius:4px}
+.login-view .login-window form .rememberBtn{margin:10px 0 4px;line-height:normal;font-size:12px;color:#666;overflow:hidden}
+.login-view .login-window form .rememberBtn .login-chBtn{margin:0;margin-right:10px;float:left}
+.login-view .login-window form .rememberBtn span{display:inline-block}
+.login-view .login-window form .loginBtn{width:350px;height:40px;line-height:40px;border:0;margin:6px 0;text-align:center;background:#00bff3;border-radius:4px;color:#fff;font-size:18px;font-family:"Microsoft YaHei"!important;transition:background-color .1s linear 0s}

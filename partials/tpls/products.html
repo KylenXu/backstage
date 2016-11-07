@@ -1,0 +1,28 @@
+<div class="products-content">
+	<h3>商品信息</h3>
+	<hr>
+	<table class="table table-striped table-bordered table-hover">
+		<tr>
+			<td>商品Id</td>
+			<td>商品名称</td>
+			<td>商品价格</td>
+			<td>商品原价</td>
+			<td>售出总数</td>
+		</tr>
+		<tr ng-repeat="pro in productsData">
+			<td id="{{pro.product_id}}" class="godetail" ng-click="godetail($event)">#{{pro.product_id}}</td>
+			<td class="godetail" ng-click="godetail($event)">{{pro.name}}</td>
+			<td>¥{{pro.price}}</td>
+			<td>¥{{pro.mktprice}}</td>
+			<td>{{pro.buy_count}}</td>
+		</tr>
+	</table>
+	<div class="tablebar">
+		<button type="button" class="btn btn-default">上一页</button>
+		<button type="button" class="btn btn-default">1</button>
+		<button type="button" class="btn btn-default">2</button>
+		<button type="button" class="btn btn-default">3</button>
+		<button type="button" class="btn btn-default">4</button>
+		<button type="button" class="btn btn-default">下一页</button>
+	</div>
+</div>

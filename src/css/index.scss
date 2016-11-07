@@ -1,0 +1,164 @@
+@mixin contentStyle(){
+	background: #FFF;
+	margin-top: 10px;
+	padding: 0 15px 20px;
+	-webkit-webkit-border-radius: 5px;
+	-moz-webkit-border-radius: 5px;
+	-ms-webkit-border-radius: 5px;
+	-o-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+@mixin commonTil(){
+	margin: 0;
+	height: 60px;
+	line-height: 60px;
+}
+@mixin commonHr(){
+	margin: 0;
+	margin-bottom: 20px;
+}
+// index-wrap
+.index-wrap{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+// header
+.index-header{
+	height: 60px;
+	.logo{
+		height: 100%;
+		padding-top: 6px;
+		img{
+			height: 86%;
+		}
+	}
+}
+.header-nav{
+	height: 100%;
+	.headerNav-wrap{
+		float: right;
+		height: 100%;
+		position: relative;
+	}
+	.search{
+		width: 260px;
+		height: 100%;
+		display: inline-block;
+		input{
+			width: 200px;
+			height: 28px;
+			padding: 1px 6px;
+			color: #797979;
+			font-size: 12px;
+			outline: none;
+			-webkit-webkit-border-radius: 4px;
+			-moz-webkit-border-radius: 4px;
+			-ms-webkit-border-radius: 4px;
+			-o-webkit-border-radius: 4px;
+			border-radius: 4px;
+			border: 1px solid #aaa;
+			position: absolute;
+			top: 50%;
+			margin-top: -14px;
+		}
+	}
+	.admin{
+		float: right;
+		height: 100%;
+		padding-top: 4px;
+		.admin-Img{
+			-webkit-webkit-border-radius: 50%;
+			-moz-webkit-border-radius: 50%;
+			-ms-webkit-border-radius: 50%;
+			-o-webkit-border-radius: 50%;
+			border-radius: 50%;
+			overflow: hidden;
+			height: 60%;
+			img{
+				height: 100%;
+				color: #797979;
+			}
+		}
+		.admin-name{
+			height: 40%;
+			font-size: 12px; 
+		}
+	}
+}
+
+// content
+
+.indexContent-wrap{
+	height: 100%;
+}
+.index-aside{
+	background: #2a3542;
+	height: 100%;
+	ul{
+		padding: 10px 0;
+	}
+	li{
+		padding: 12px 10px;
+		margin: 4px;
+		color: #aeb2b7;
+		font: 14px "微软雅黑";
+		&:hover{
+			background: #35404d;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-webkit-border-radius: 4px;
+			-ms-webkit-border-radius: 4px;
+			-o-webkit-border-radius: 4px;
+		}
+	}
+}
+.index-content{
+	background: #f1f2f7;
+	height: 100%;
+}
+
+// products
+.products-content{
+	@include contentStyle();
+	h3{
+		@include commonTil();
+	}
+	hr{
+		@include commonHr();
+	}
+	table{
+		.godetail{
+			cursor: pointer;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.tablebar{
+		height: 60px;
+		text-align: right;
+		button{
+			height: 30px;
+			margin-top: 15px;
+			outline: none;
+		}
+	}
+}
+
+// productDetail
+
+.pro-detail{
+	@include contentStyle();
+	h3{
+		@include commonTil();
+	}
+	hr{
+		@include commonHr();
+	}
+	form{
+		width: 76%;
+		padding: 40px 12% 0;
+	}
+}

@@ -1,0 +1,32 @@
+
+<div class="index-wrap container-fluid">
+	<div class="index-header">
+		<div class="logo col-lg-2"><img src="/images/logo2.png" alt=""></div>
+		<div class="header-nav  col-lg-10">
+			<div class="headerNav-wrap">
+				<div class="search">
+					<input type="text" placeholder="搜索">
+					<i></i>
+				</div>
+				<div class="admin">
+					<div class="admin-Img">
+						<img src="/images/adminImg.jpg" alt="">
+					</div>
+					<span class="admin-name">Kylen</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="indexContent-wrap">
+		<div class="index-aside col-lg-2">
+			<ul class="list-unstyled">
+				<li id="products" ng-click="choose($event)">商品管理</li>
+				<li id="order" ng-click="choose($event)">会员管理</li>
+				<li id="customer" ng-click="choose($event)">订单管理</li>
+			</ul>
+		</div>
+		<div class="index-content col-lg-10">
+			<div class="ui-view"></div>
+		</div>
+	</div>
+</div>
